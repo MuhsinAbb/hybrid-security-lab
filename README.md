@@ -3,7 +3,7 @@
 ## Overview
 A hybrid on-premise and cloud security lab built on a physical ESXi server connected to an AWS cloud environment. Designed to simulate real-world attack scenarios and detect them using a centralized Wazuh SIEM with custom detection rules mapped to MITRE ATT&CK techniques, automated IP blocking via AWS Lambda, and real-time SMS alerts via AWS SNS.
 
-Built during a federal cybersecurity internship at Mele Associates (May–Aug 2026).
+Built during a cybersecurity internship at Mele Associates.
 
 ---
 
