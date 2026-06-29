@@ -48,10 +48,10 @@ Built during a cybersecurity internship at Mele Associates.
 |---|---|
 | Ubuntu Target VM | Complete |
 | Wazuh SIEM | Complete |
-| Kali Linux | In Progress |
-| Wazuh agent on Ubuntu target | In Progress |
-| AWS cloud environment | Phase 2 |
-| Lambda + SNS alerts | Phase 2 |
+| Kali Linux | Complete |
+| Wazuh agent on Ubuntu target | Complete |
+| AWS cloud environment | Phase 2 | Complete |
+| Lambda + SNS alerts | Phase 2 | Complete |
 
 ---
 
