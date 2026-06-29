@@ -211,3 +211,7 @@ Attack from Kali → EC2 receives it → Wazuh agent detects it → alert appear
 ### Lambda Function
 ![Lambda Function](screenshots/lambda.png)
 *AWS Lambda function wazuh-alert-handler configured to receive Wazuh webhooks and publish alerts to SNS*
+
+### Automated Email Alert
+![Email Alert](screenshots/email-noti.png)
+*Automated email alert received via AWS SNS when Wazuh detected a high severity attack — triggered by Lambda webhook integration*
