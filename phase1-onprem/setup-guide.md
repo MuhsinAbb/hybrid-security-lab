@@ -205,22 +205,14 @@ sudo shutdown -h now
 *Custom rule 100004 firing with T1136.001 Persistence tag when backdoor user was created*
 
 ### Wireshark SSH Brute Force Capture
-![Wireshark SSH](screenshots/wireshark-ssh-bruteforce.png)
+![Wireshark SSH](screenshots/wireshark-ssh-bruteforce.png.png)
 *Wireshark capturing raw TCP and SSHv2 packets from Kali hitting port 22 on the Ubuntu target during the brute force attack*
 
 ### Wireshark Nikto Web Scan Capture
-![Wireshark Nikto](screenshots/wireshark-nikto-webscan.png)
+![Wireshark Nikto](screenshots/wireshark-nikto-webscan.png.png)
 *Wireshark capturing 16,581 HTTP packets flooding Apache during the Nikto web enumeration scan*
 
 ### Metasploit Port Scan
 ![Metasploit](screenshots/metasploit.png)
 *Metasploit auxiliary/scanner/portscan/tcp finding open ports 22 and 80 on the EC2 instance*
 ---
-
-## Status
-
-- [x] All three VMs installed and running
-- [x] Wazuh SIEM dashboard accessible
-- [x] Ubuntu target agent active and reporting
-- [x] First attacks executed and detected
-- [x] Screenshots committed to repo
