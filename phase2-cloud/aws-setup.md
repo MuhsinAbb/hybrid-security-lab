@@ -200,10 +200,14 @@ Attack from Kali → EC2 receives it → Wazuh agent detects it → alert appear
 
 ## Screenshots
 
-| Screenshot | Description |
-|---|---|
-| both-agents-active-hybrid-dashboard.png | Both agents active simultaneously |
-| lambda-email-alert-onprem.png | Email alert from on-prem attack |
-| lambda-email-alert-ec2.png | Email alert from EC2 attack |
-| lambda-function-aws.png | Lambda function in AWS console |
-| sns-topic-aws.png | SNS topic in AWS console |
+### Both Agents Active Simultaneously
+![Both Agents Active](screenshots/dashboard-2-agents.png)
+*Wazuh dashboard showing both ubuntu-target (on-prem) and ip-10-0-1-78 (AWS EC2) active simultaneously — single pane of glass across hybrid environment*
+
+### EC2 Security Groups
+![EC2 Security Groups](screenshots/ec2-security-groups.png)
+*AWS security group hybrid-lab-sg configured with inbound rules for SSH, HTTP, and Wazuh agent ports 1514 and 1515*
+
+### Lambda Function
+![Lambda Function](screenshots/lambda.png)
+*AWS Lambda function wazuh-alert-handler configured to receive Wazuh webhooks and publish alerts to SNS*
