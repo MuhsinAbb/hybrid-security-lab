@@ -50,8 +50,8 @@ Built during a cybersecurity internship at Mele Associates.
 | Wazuh SIEM | Complete |
 | Kali Linux | Complete |
 | Wazuh agent on Ubuntu target | Complete |
-| AWS cloud environment | Phase 2 | Complete |
-| Lambda + SNS alerts | Phase 2 | Complete |
+| AWS cloud environment | Complete |
+| Lambda + SNS alerts | Complete |
 
 ---
 
