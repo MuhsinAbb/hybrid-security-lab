@@ -172,25 +172,49 @@ sudo shutdown -h now
 
 ## Screenshots
 
+### Kali Linux Desktop
+![Kali Desktop](screenshots/kali-desktop.png)
+*Kali Linux 2026.1 running on ESXi as the attacker machine*
+
+### Ubuntu Target Running
+![Ubuntu Target](screenshots/ubuntu-target-running.png)
+*Ubuntu 26.04 LTS target VM running at 192.168.244.4*
+
 ### Wazuh Dashboard
 ![Wazuh Dashboard](screenshots/wazuh-dashboard.png)
-*Wazuh SIEM dashboard showing all modules including Security Events, MITRE ATT&CK, and Vulnerability detection*
+*Wazuh SIEM dashboard showing all available security modules*
 
 ### Ubuntu Target Agent Active
 ![Agent Active](screenshots/ubuntu-target-agent-active.png)
 *ubuntu-target registered as agent 001, status Active, IP 192.168.244.4, Ubuntu 26.04, Wazuh v4.7.5*
 
-### Kali Linux Attacker Machine
-![Kali Desktop](screenshots/kali-desktop.png)
-*Kali Linux 2026.1 running on ESXi, used as the attacker machine for all attack scenarios*
-
-### Ubuntu Target Running
-![Ubuntu Target](screenshots/ubuntu-target-running.png)
-*Ubuntu 26.04 LTS target VM running at 192.168.244.4, logged in as intern user*
-
 ### SSH Brute Force Detected
 ![SSH Brute Force](screenshots/ssh-bruteforce-alert-wazuh.png)
-*Wazuh detecting SSH brute force attack from Kali (192.168.244.11) — 253 hits including Multiple authentication failures at level 10, mapped to MITRE T1110.001*
+*Wazuh detecting SSH brute force attack from Kali — 253 hits including Multiple authentication failures at level 10, mapped to MITRE T1110.001*
+
+### Full Dashboard Overview
+![Full Dashboard](screenshots/wazuh-dashboard-full.png)
+*Wazuh dashboard showing 10,000+ alerts across multiple attack types including port scan, XSS, Shellshock, and web enumeration*
+
+### Custom Rule 100001 Firing
+![Custom Rule](screenshots/custom-rule-100001-firing.png)
+*Custom rule 100001 firing with T1110.001 Credential Access tag confirming MITRE mapping is working*
+
+### Backdoor User Persistence Detected
+![Persistence](screenshots/rule-100004-new-user-persistence.png)
+*Custom rule 100004 firing with T1136.001 Persistence tag when backdoor user was created*
+
+### Wireshark SSH Brute Force Capture
+![Wireshark SSH](screenshots/wireshark-ssh-bruteforce.png)
+*Wireshark capturing raw TCP and SSHv2 packets from Kali hitting port 22 on the Ubuntu target during the brute force attack*
+
+### Wireshark Nikto Web Scan Capture
+![Wireshark Nikto](screenshots/wireshark-nikto-webscan.png)
+*Wireshark capturing 16,581 HTTP packets flooding Apache during the Nikto web enumeration scan*
+
+### Metasploit Port Scan
+![Metasploit](screenshots/metasploit.png)
+*Metasploit auxiliary/scanner/portscan/tcp finding open ports 22 and 80 on the EC2 instance*
 ---
 
 ## Status
