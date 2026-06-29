@@ -7,16 +7,18 @@ Phase 2 extends the hybrid security lab into AWS by deploying an Ubuntu EC2 inst
 
 ## Architecture
 
-VPC (10.0.0.0/16)
-└── Public Subnet (10.0.1.0/24)
-    └── Ubuntu EC2 (10.0.1.78)
-        ├── Wazuh Agent → reports to on-prem Wazuh via ngrok tunnel
-        ├── Apache web server → attack surface
-        └── CloudWatch Agent → AWS native logging
-
-AWS Services
-├── Lambda → wazuh-alert-handler → receives Wazuh webhooks
-└── SNS → SecurityAlerts topic → email alerts
+| Component | Details |
+|---|---|
+| VPC | 10.0.0.0/16 — us-east-1 |
+| Public Subnet | 10.0.1.0/24 — us-east-1a |
+| EC2 Instance | Ubuntu 26.04 LTS — t2.micro — 10.0.1.78 |
+| EC2 Public IP | 98.84.50.190 |
+| Wazuh Agent | v4.7.5 — reports to on-prem Wazuh via ngrok |
+| Apache | Port 80 — web attack surface |
+| Lambda | wazuh-alert-handler — receives Wazuh webhooks |
+| SNS | SecurityAlerts topic — email notifications |
+| Ngrok | Tunnel from public internet to private Wazuh manager |
+| Connection Method | Ngrok TCP tunnel (Phase 2a) — Site-to-site VPN planned (Phase 2b) |
 
 ---
 
