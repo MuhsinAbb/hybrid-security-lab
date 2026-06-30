@@ -13,7 +13,7 @@ All attacks were executed from Kali Linux (192.168.244.11) against both the on-p
 nmap -A -sV -p- 192.168.244.4
 **What it does:** Discovers open ports, running services, and OS information on the target.
 **Wazuh detection:** Rule 100002 fires after 10 connection attempts within 60 seconds. Tagged T1046 Discovery.
-**Screenshot:** screenshots/rule-100002-port-scan-t1046.png
+**Screenshot:** ../phase1-onprem/screenshots/ssh-bruteforce-alert-wazuh.png
 
 ---
 
