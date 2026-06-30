@@ -23,7 +23,7 @@ nmap -A -sV -p- 192.168.244.4
 hydra -l intern -P /usr/share/wordlists/rockyou.txt ssh://192.168.244.4 -t 4
 **What it does:** Attempts thousands of passwords against the SSH service using the rockyou wordlist.
 **Wazuh detection:** Rule 100001 fires after 5 SSH failures within 120 seconds at level 12. Tagged T1110.001 Credential Access. Generated 253 alerts.
-**Screenshot:** screenshots/ssh-bruteforce-alert-wazuh.png
+**Screenshot:**  ../phase1-onprem/screenshots/ssh-bruteforce-alert-wazuh.png
 
 ---
 
